@@ -1,0 +1,40 @@
+{
+  "name": "backbone-back",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {
+    "socket.io": "^4.4.0"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.0.0",
+    "@strapi/plugin-i18n": "4.0.0",
+    "@strapi/plugin-users-permissions": "4.0.0",
+    "@strapi/provider-email-sendgrid": "^4.0.0",
+    "@strapi/strapi": "4.0.0",
+    "mysql": "2.18.1",
+    "strapi-provider-email-sendgrid": "^3.6.8",
+    "stripe": "^8.194.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "c81a60b5-62dd-4d54-8996-34f1d887250a"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "optionalDependencies": {
+    "bufferutil": "^4.0.5",
+    "utf-8-validate": "^5.0.7"
+  }
+}

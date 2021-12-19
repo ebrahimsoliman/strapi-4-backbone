@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meetups",
+  "info": {
+    "singularName": "meetup",
+    "pluralName": "meetups",
+    "displayName": "meetup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
