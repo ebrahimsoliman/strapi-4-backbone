@@ -24,7 +24,7 @@ module.exports = {
       strapi.server.httpServer,
       {
         cors: {
-          origin     : "http://localhost:3000",
+          origin     : process.env.SOCKET_FRONT_ORIGIN,
           methods    : [
             "GET",
             "POST"
@@ -38,7 +38,8 @@ module.exports = {
             socket.on('meetupsChanged',
                       (res) => {
                         console.log('changed')
-                        socket.broadcast.emit("fresh", {})
+                        socket.broadcast.emit("fresh",
+                                              {})
                       })
             socket.emit("hello",
                         JSON.stringify({message: "Welcome to my website"}));
