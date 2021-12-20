@@ -24,7 +24,7 @@ module.exports = {
       strapi.server.httpServer,
       {
         cors: {
-          origin     : process.env.FRONT_ORIGIN,
+          origin     : process.env.SOCKET_FRONT_ORIGIN,
           methods    : [
             "GET",
             "POST"
